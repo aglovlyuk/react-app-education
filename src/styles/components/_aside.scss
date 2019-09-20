@@ -1,0 +1,207 @@
+.sidebar {
+    box-shadow: 1px 0 0 #eaf0f2;
+    background-color: #fff;
+    display: flex;
+    padding: $side-gutters-sm;
+    @include media('<tablet') {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @include media('>=tablet') {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        overflow: auto;
+        width: $aside;
+        padding: 39px $side-gutters-sm 39px $side-gutters-sm * 3;
+    }
+
+    .login {
+        margin-left: -$side-gutters-sm;
+        height: auto;
+        min-width: 0;
+    }
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    @include media('<tablet') {
+        max-width: 60px;
+    }
+    @include media('>=tablet') {
+        margin: 0 0 39px;
+        display: block;
+    }
+}
+
+.navbar-collapse {
+    @include media('>=tablet') {
+        flex-direction: column;
+    }
+}
+
+.collapse-inner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media('>=tablet') {
+        width: calc(100% + #{$side-gutters-sm * 4});
+        margin-right: -$side-gutters-sm;
+        margin-left: -$side-gutters-sm * 3;
+    }
+}
+
+.main-nav {
+    @include media('<tablet') {
+        margin-bottom: $spacer * 2;
+        padding-top: $spacer;
+        flex-grow: 1;
+        margin-left: -$side-gutters-sm;
+        margin-right: -$side-gutters-sm;
+    }
+}
+
+.main-nav__list {
+    @extend %listreset;
+    width: 100%;
+}
+
+.main-nav__item {
+    font-size: .875em;
+    line-height: 1.25;
+    color: $font-cr-primary;
+    margin-bottom: $side-gutters-sm * 2;
+    &.is-active {
+        background-color: rgba(#fff, .5);
+        .icon {
+            color: #ffc6f1;
+        }
+    }
+    > a {
+        color: currentColor;
+        display: flex;
+        align-items: center;
+        padding: 0 $side-gutters-sm 0 $side-gutters-sm * 2;
+        text-decoration: none;
+        @include hover {
+            color: rgba($font-cr-primary, .5);
+        }
+        .icon {
+            color: currentColor;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .badge {
+        margin-left: 18px;
+    }
+}
+
+.main-nav__item-icon {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(234, 240, 247, 0.8), 0 1px 3px rgba(#000, .05);
+    background-color: #fff;
+    .is-active & {
+        background-color: $cr-brand-primary;
+    }
+}
+
+.main-nav__inner-nav {
+    @extend %clearfix;
+    @extend %listreset;
+    padding-left: 80px;
+}
+
+.main-nav__inner-nav-item {
+    font-size: 14px;
+    line-height: 1.214;
+    padding-left: 10px;
+    color: $font-cr-primary;
+    position: relative;
+    margin-bottom: 13px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+    }
+    a {
+        color: currentColor;
+        @include hover {
+            color: rgba($font-cr-primary, .5);
+        }
+    }
+}
+
+.dropdown-menu-sm {
+    @include media('>=tablet') {
+        position: static !important;
+        margin: 0;
+        float: none;
+        display: block !important;
+        border-radius: 0;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+.additional-nav {
+    font-size: 14px;
+    position: relative;
+    @include media('>=tablet') {
+        padding-top: $spacer;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: $side-gutters-sm * 2;
+        width: 10px;
+        height: 1px;
+        background-color: #c7d5db;
+    }
+}
+
+.additional-nav__list {
+    @extend %listreset;
+    padding-left: $side-gutters-sm * 2;
+}
+
+.additional-nav__list-item {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+    margin-bottom: 13px;
+    @include media('<tablet') {
+        padding-left: $spacer;
+        padding-right: $spacer;
+    }
+    > a {
+        text-decoration: none;
+        color: rgba(#8fa2ad, .7);
+        @include hover {
+            color: rgba(#8fa2ad, 1);
+        }
+    }
+}

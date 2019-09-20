@@ -1,0 +1,47 @@
+// Google font: Poppins
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@import "core/colors";
+@import "core/typography";
+@import "core/variables";
+
+@import "vendor/reset";
+@import "vendor/include-media";
+
+// Bootstrap
+@import 'core/bootstrap-overrides';
+@import '~bootstrap/scss/bootstrap';
+
+@import "core/mixins";
+@import "core/icons";
+
+@import "utils/utils";
+@import "utils/classes";
+@import "utils/helpers";
+@import "utils/styleguide";
+
+@import "elements/buttons";
+@import "elements/links";
+@import "elements/typography";
+@import "elements/forms";
+@import "elements/paging";
+@import "elements/tabs";
+@import "elements/badge";
+@import "elements/tooltip";
+@import "elements/modal-override";
+
+@import "layout/header";
+@import "layout/layout";
+
+@import "pages/not-found";
+@import "pages/general-cms";
+
+@import "components/dashboard";
+@import "components/aside";
+@import "components/info-panels";
+@import "components/card";
+@import "components/card-trail";
+@import "components/card-issues";
+@import "components/refer";
+@import "components/popup";
+@import "components/login";

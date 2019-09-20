@@ -1,0 +1,59 @@
+.header {
+    background-color: #fff;
+    color: $font-cr-primary;
+    padding: 11px $side-gutters-sm;
+    @include media('>=desktop') {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    @include media('>=widescreen') {
+        padding-right: 7.41vw;
+        padding-left: 7.41vw;
+    }
+    @include media('>=tablet') {
+        padding-left: 28px;
+    }
+    .login {
+        @include media('>=tablet') {
+            display: flex !important;
+        }
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @include media('<tablet') {
+        line-height: 1.3;
+    }
+    @include hover {
+        color: rgba($cr-brand-secondary, .5);
+        text-decoration: none;
+    }
+}
+
+.header-user__icon {
+    margin-right: 30px;
+    color: $badge-bg;
+    font-size: 22px;
+}
+
+.login {
+    font-size: 22px;
+    color: $badge-bg;
+}
+
+.login-link {
+    color: $badge-bg;
+    @include hover {
+        color: rgba($cr-brand-secondary, .5);
+        text-decoration: none;
+    }
+}

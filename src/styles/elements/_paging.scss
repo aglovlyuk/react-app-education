@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.pagination-list {
+    @extend %listreset;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    li {
+        margin: 0 6px;
+    }
+    a {
+        width: 9px;
+        height: 9px;
+        border: 2px solid #c7d4e7;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        text-indent: -9999px;
+    }
+    .is-active {
+        a {
+            background-color: #c7d4e7;
+        }
+    }
+}

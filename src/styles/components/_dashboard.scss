@@ -1,0 +1,30 @@
+.dashboard {
+    background-color: $bg-color-secondary;
+    padding: $side-gutters-sm;
+    @include media('>=desktop') {
+        padding: 45px 28px 40px;
+    }
+    @include media('>=widescreen') {
+        padding-right: 7.41vw;
+        padding-left: 7.41vw;
+    }
+}
+
+
+.dashboard__heading {
+    margin-bottom: 24px;
+}
+
+.dashboard__heading-txt {
+    color: $cr-brand-secondary;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.17px;
+}
+
+.mark-txt {
+    color: $cr-brand-primary;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: 1px dashed rgba($cr-brand-primary, .4);
+}

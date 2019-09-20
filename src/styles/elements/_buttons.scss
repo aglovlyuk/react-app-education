@@ -1,0 +1,203 @@
+a[class*="btn"] {
+    text-decoration: none;
+}
+
+.btn-primary {
+    @include anim;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(#000, .08);
+    border-radius: 8px;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 48px;
+    background-color: $cr-brand-primary;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-decoration: none;
+    @include hover {
+        background-color: $cr-brand;
+        text-decoration: none;
+    }
+    .inverted & {
+        color: $cr-brand-secondary;
+        background-color: $cr-brand-primary;
+        @include hover {
+            background-color: $cr-brand-secondary;
+            color: $cr-brand-primary;
+        }
+    }
+    .icon {
+        margin-right: 10px;
+    }
+}
+
+.btn-secondary {
+    @extend .btn-primary;
+    height: 34px;
+    box-shadow: 0 3px 6px rgba(14, 29, 47, 0.05), 0 1px 3px rgba(#000, .06);
+    border-radius: 6px;
+    background-color: #fff;
+    color: $badge-bg;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.17px;
+    text-transform: uppercase;
+
+    @include hover {
+        background-color: $badge-bg;
+        color: #fff;
+    }
+}
+
+.btn-md {
+    height: 38px;
+    border-radius: 8px;
+}
+
+.btn-lg {
+    height: 60px;
+    border-radius: 4px;
+}
+
+.btn-width-200 {
+    min-width: 200px;
+}
+
+.btn-danger {
+    @extend .btn-secondary;
+    box-shadow: 0 3px 6px #eaf0f7, 0 1px 3px rgba(#000, .06);
+    background-color: $cr-danger;
+    color: #fff;
+    @include hover {
+        background-color: #fff;
+        color: $cr-danger;
+    }
+}
+
+.btn--wide {
+    min-width: 220px;
+}
+
+.btn-primary-inverted {
+    @extend .btn-primary;
+    @include hover-bg($cr-brand-primary);
+    background-color: $cr-brand-secondary;
+}
+
+.btn-default {
+    @extend .btn-primary;
+    height: 36px;
+    text-transform: uppercase;
+    color: rgba($cr-brand-secondary, .5);
+    border: 1px solid currentColor;
+    background-color: transparent;
+    padding: 10px;
+    min-width: 68px;
+
+    @include hover {
+        color: #fff;
+        background-color: $cr-brand-secondary;
+        border-color: $cr-brand-secondary;
+    }
+}
+
+.btn-submit {
+    @extend .btn-primary;
+    min-width: 178px;
+    padding: 10px 20px;
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        color: $font-cr-secondary;
+        pointer-events: none;
+    }
+    svg {
+        font-size: 18px;
+        color: #fff;
+        margin-right: 14px;
+        pointer-events: none;
+    }
+}
+
+.btn-transparency {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.btn-add {
+    @include anim;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px dashed rgba($cr-brand-secondary, .3);
+    color: $cr-brand-secondary;
+    .icon {
+        margin-right: 10px;
+        color: $cr-link;
+    }
+    @include hover {
+        color: $cr-link;
+    }
+}
+
+.btn-edit {
+    @include anim;
+    width: 36px;
+    height: 36px;
+    background-color: $cr-brand-primary;
+    color: $cr-brand-secondary;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include hover {
+        background-color: $cr-brand-secondary;
+        color: $cr-brand-primary;
+    }
+    .icon-edit {
+        font-size: 18px;
+        margin: -2px -3px 0 0;
+    }
+}
+
+.btn-next {
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 8px 10px rgba(234, 240, 247, 0.5), 0 3px 5px rgba(19, 28, 43, 0.02);
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    @include hover {
+        background-color: $cr-brand-secondary;
+        color: #fff;
+    }
+}
+
+.btn-help {
+    font-size: 26px;
+    color: #d4d9dd;
+    @include hover {
+        color: $cr-brand-primary;
+    }
+}
