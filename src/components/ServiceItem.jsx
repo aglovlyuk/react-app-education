@@ -4,7 +4,7 @@ class ServiceItem extends React.Component {
     render() {
         const serviceTemplate = this.props.data.map(function(item) {
             return (
-                <div key={item.id} className="col-sm-6">
+                <div className="col-sm-6">
                     <div className="card">
                         <div className="card-image">
                             <img src={item.img} alt="" />

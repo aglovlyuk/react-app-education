@@ -33,6 +33,7 @@ const Modal = () => {
                                 issues, DoNotPay has your back in hundreds of areas.
                             </li>
                         </ul>
+
                         <h6>Your Connected Account</h6>
                         <div className="connected-card">
                             <div className="connected-card__img">

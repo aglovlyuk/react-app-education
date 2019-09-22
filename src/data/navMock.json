@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Home",
+    "link": "/",
+    "icon": "home",
+    "isActive": true
+  },
+  {
+    "title": "Rewards",
+    "link": "/",
+    "icon": "star",
+    "rewards": "3,123"
+  },
+  {
+    "title": "Disputes",
+    "link": "/",
+    "icon": "document"
+  },
+  {
+    "title": "Community",
+    "link": "/",
+    "icon": "people"
+  },
+  {
+    "title": "Police Protection",
+    "link": "/",
+    "icon": "shield"
+  }
+]
