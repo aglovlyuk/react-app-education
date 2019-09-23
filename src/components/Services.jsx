@@ -3,7 +3,7 @@ import ServiceItem from './ServiceItem';
 import CardTrail from './CardTrail';
 import Issues from './Issues';
 import Refer from './Refer';
-import allServices from '../mock/allServices';
+import allServices from '../data/allServices';
 
 const Services = () => {
     return (

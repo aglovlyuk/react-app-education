@@ -1,6 +1,6 @@
 import React from "react";
 import mainLogo from './../images/logo.svg';
-import navMock from '../mock/navMock';
+import navMock from '../data/navMock';
 
 const Aside = () => {
     return (
