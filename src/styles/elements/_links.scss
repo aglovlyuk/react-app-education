@@ -13,9 +13,8 @@
 
 .link-primary {
     text-decoration: none;
-    text-transform: uppercase;
     position: relative;
-    color: $cr-link;
+    color: $cr-brand-primary;
     &:hover {
         color: $cr-brand-secondary;
     }

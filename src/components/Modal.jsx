@@ -34,17 +34,18 @@ const Modal = () => {
                             </li>
                         </ul>
 
-                        <h6>Your Connected Account</h6>
-                        <div className="connected-card">
+                        <h6 className="mb-4">Your Connected Account</h6>
+                        <div className="connected-card mb-4">
                             <div className="connected-card__img">
-                                <img src="" alt="" />
+                                <img src={ require('./../images/visa.png')} alt="" />
                             </div>
                             <div className="connected-card__name">Wells Fargo Card</div>
-                            <div className="connected-card__number">**** 2019</div>
+                            <div className="connected-card__number">
+                                **** 2019
+                                <svg className="connected-card__number-arrow icon icon-arrow-angle"><use xlinkHref="#icon-arrow-angle"></use></svg>
+                            </div>
                         </div>
-                        <p className="modal-agreement">I agree to the DoNotPay Terms of Service dummy text used in
-                            laying out print, graphic or 5.00 per month web designse passage is attributed to an
-                            unknown.</p>
+                        <p className="modal-agreement">I agree to the DoNotPay Terms of Service dummy text used in laying out print, graphic or 5.00 per month web designse passage is attributed to an unknown.</p>
                     </div>
                     <div className="modal-footer justify-content-between">
                         <button type="button" className="btn btn-transparency" data-dismiss="modal">Cancel</button>

@@ -1,0 +1,32 @@
+.account-nav {
+    @extend %listreset;
+    margin-top: 15px;
+}
+
+.account-nav__item {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.16px;
+    border-bottom: 1px solid #eaf0f2;
+    a {
+        display: block;
+        position: relative;
+        padding: 16px 0;
+        color: $cr-brand-tertiary;
+        text-decoration: none;
+        &:hover {
+            color: $cr-brand-secondary;
+        }
+        &:after {
+            content: '';
+            @include ycenter;
+            margin-top: -2px;
+            right: 0;
+            width: 6px;
+            height: 6px;
+            border: solid #bdc8d2;
+            border-width: 0 1px 1px 0;
+            transform: rotate(-45deg);
+        }
+    }
+}

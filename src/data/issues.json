@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "title": "You’ve got money!",
+    "img": "/images/ico-money.png",
+    "text": "I have contacted United and waived your change fees, saving you ",
+    "textMark": "$201.52",
+    "price": "$201.<small>52</small>",
+    "btnType": "secondary",
+    "btnText": "CLEAR NOTIFCATION"
+  },
+  {
+    "id": "2",
+    "title": "Parking Ticket Dispute",
+    "img": "/images/img-ticket.png",
+    "text": "We need your account number to send funds to ",
+    "textMark": "Resolve now",
+    "btnType": "danger",
+    "btnText": "RESOLVE NOW"
+  }
+]

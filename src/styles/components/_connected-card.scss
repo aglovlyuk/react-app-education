@@ -1,0 +1,37 @@
+.connected-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #eaf0f2;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.connected-card__img {
+    width: 47px;
+    height: 32px;
+    box-shadow: 0 6px 30px rgba(48, 57, 81, 0.06), 0 6px 9px rgba(113, 139, 145, 0.12);
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11px;
+}
+
+.connected-card__name {
+    color: $cr-brand-tertiary;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.16px;
+}
+
+.connected-card__number {
+    margin-left: auto;
+}
+
+.connected-card__number-arrow {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #bdc8d2;
+}

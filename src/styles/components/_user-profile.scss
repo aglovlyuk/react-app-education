@@ -1,0 +1,41 @@
+.user-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:before {
+        content: '';
+        right: 0;
+        top: -30px;
+        position: absolute;
+        background: url(/images/modal-decor.png) no-repeat;
+        width: 225px;
+        height: 109px;
+    }
+}
+
+.user-profile__ava {
+    font-size: 84px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.user-profile__name {
+    color: $cr-brand-tertiary;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.07px;
+    margin-bottom: 10px;
+}
+
+.user-profile__create-date {
+    color: #919eaf;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.04px;
+    margin-bottom: 30px;
+}
+
+.user-profile__cta {
+    min-width: 230px;
+}

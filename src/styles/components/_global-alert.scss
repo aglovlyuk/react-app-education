@@ -1,0 +1,45 @@
+.alert-global {
+    padding-left: $side-gutters-sm;
+    padding-right: $side-gutters-sm;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $cr-brand-primary;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    @include media('>=desktop') {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    @include media('>=widescreen') {
+        padding-right: 7.41vw;
+        padding-left: 7.41vw;
+    }
+    &.alert-warning {
+        background-color: #fad1f5;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    .btn-secondary {
+        color: $cr-brand-primary;
+        margin-left: 20px;
+    }
+
+    .btn-close {
+        @include ycenter;
+        right: $side-gutters-sm;
+        @include media('>=desktop') {
+            right: 28px;
+        }
+        @include media('>=widescreen') {
+            right: 7.41vw;
+        }
+    }
+}

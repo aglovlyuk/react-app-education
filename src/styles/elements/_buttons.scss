@@ -57,6 +57,22 @@ a[class*="btn"] {
     }
 }
 
+.btn-cta {
+    @extend .btn-primary;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgba(246, 164, 235, .5);
+    color: $cr-brand-primary;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    .icon-arrow-angle {
+        font-size: 10px;
+        margin-left: .75em;
+    }
+}
+
 .btn-md {
     height: 38px;
     border-radius: 8px;
@@ -199,5 +215,25 @@ a[class*="btn"] {
     color: #d4d9dd;
     @include hover {
         color: $cr-brand-primary;
+    }
+}
+
+.btn-close {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    &:before,
+    &:after {
+        @include xycenter;
+        width: 1px;
+        height: 13px;
+        content: '';
+        background-color: $cr-brand-primary;
+    }
+    &:before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:after {
+        transform: translate(-50%, -50%) rotate(45deg);
     }
 }

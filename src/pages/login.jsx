@@ -13,7 +13,7 @@ const Login = () => {
                     </a>
                 </div>
             </div>
-
+            
             <div className="empty-wrapper">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -21,15 +21,14 @@ const Login = () => {
                             <div className="login-card">
                                 <div className="login-card__header">
                                     <h4 className="login-card__header-ttl">Sign in</h4>
-                                    <p className="login-card__header-txt">Sign in to your account with your mobile
-                                        number</p>
+                                    <p className="login-card__header-txt">Sign in to your account with your mobile number</p>
                                 </div>
 
                                 <div className="login-card__body">
                                     <form method="POST" action="">
                                         <div className="form-group login-card__control">
                                             <input id="tel" type="tel" className="form-control-bordered" name="tel"
-                                                   placeholder="Your mobile number" required />
+                                                    placeholder="Your mobile number" required />
                                                 <svg className="icon icon-phone"><use xlinkHref="#icon-phone"></use></svg>
                                         </div>
 

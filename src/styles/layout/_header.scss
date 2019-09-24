@@ -52,8 +52,25 @@
 
 .login-link {
     color: $badge-bg;
+    position: relative;
     @include hover {
-        color: rgba($cr-brand-secondary, .5);
+        color: $cr-brand-primary;
         text-decoration: none;
+        &:after {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &:after {
+        @include anim;
+        @include xcenter;
+        bottom: -11px;
+        content: '';
+        width: 44px;
+        height: 3px;
+        border-radius: 5px 5px 0 0;
+        background-color: $cr-brand-primary;
+        visibility: hidden;
+        opacity: 0;
     }
 }

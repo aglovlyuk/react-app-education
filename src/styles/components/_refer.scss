@@ -3,6 +3,10 @@
     border-radius: 8px;
     background-color: #fff;
     padding: 30px;
+    margin-bottom: 21px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .refer-card__ttl {
@@ -29,4 +33,8 @@
     a {
         font-weight: 600;
     }
+}
+
+.refer-card__link {
+    margin-top: auto;
 }

@@ -1,6 +1,7 @@
 .dashboard {
     background-color: $bg-color-secondary;
     padding: $side-gutters-sm;
+    position: relative;
     @include media('>=desktop') {
         padding: 45px 28px 40px;
     }
